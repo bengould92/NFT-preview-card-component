@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+
+/* Reset */
+* {
+  border: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* FEM Attribution Styles */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* Custome Styles */
+body {
+  background: hsl(217, 54%, 11%);
+  font-family: "Outfit", sans-serif;
+  color: hsl(0, 0%, 100%);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  width: 350px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  background: hsl(216, 50%, 16%);
+  box-shadow: -1px 28px 10px 20px rgba(0, 0, 0, 0.08);
+  -webkit-box-shadow: -1px 28px 10px 20px rgba(0, 0, 0, 0.08);
+  -moz-box-shadow: -1px 28px 10px 20px rgba(0, 0, 0, 0.08);
+}
+
+.main-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-img img {
+  width: 300px;
+  height: auto;
+  border-radius: 8px;
+  margin: 23px;
+  z-index: 1;
+  position: relative;
+}
+
+.overlay-hover {
+  position: absolute;
+  background-color: hsla(178, 100%, 50%, 0.5);
+  z-index: 10;
+  width: 300px;
+  height: 300px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.50s;
+}
+
+.overlay-hover:hover {
+  opacity: 1;
+  tra
+}
+
+.overlay-hover img {
+  width: 15%;
+  height: 15%;
+}
+
+.main-eth-img:hover {
+  cursor: pointer;
+}
+
+.body-text {
+  margin: 0 23px;
+}
+
+.body-text h3 {
+  font-weight: 600;
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+}
+
+.eth-id {
+  cursor: pointer;
+}
+
+.body-text p {
+  line-height: 1.5;
+  font-size: 18px;
+  font-weight: 300;
+  color: hsl(215, 51%, 70%);
+}
+
+.value-time {
+  margin: 23px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.value,
+.days {
+  display: flex;
+  font-weight: 300;
+}
+
+.value img,
+.days img {
+  margin-right: 7px;
+}
+
+.value {
+  color: hsl(178, 100%, 50%);
+  font-weight: 400;
+}
+
+.days {
+  color: hsl(215, 51%, 70%);
+}
+
+.creator {
+  display: flex;
+  margin: 0 23px;
+  justify-content: flex-start;
+  padding-top: 20px;
+  border-top: 1px solid hsl(215, 32%, 27%);
+}
+
+.creator img {
+  border: 1px solid #fff;
+  border-radius: 50%;
+  width: 11%;
+  margin-right: 15px;
+}
+
+.creator p {
+  display: flex;
+  align-items: center;
+  font-weight: 300;
+}
+
+.author:hover {
+  cursor: pointer;
+}
+
+.creation {
+  color: hsl(215, 51%, 70%);
+  margin-right: 5px;
+}
